@@ -2,6 +2,9 @@
 
 <ul id='tags'>
   <% @tags.each do |tag| %>
-    <li> <%= link_to tag.name , tag_path(tag), class:'tag_title' %></li>
+    <li> <%= link_to tag.name , tag_path(tag), class:'tag_title' %>&nbsp;
+    <%= link_to '< Delete >', tag_path(tag), method: :delete, style: 'float: right' %>
+    </li>
+    <hr/>
   <% end %>
 </ul>
