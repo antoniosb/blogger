@@ -1,4 +1,7 @@
 <h1><%= @article.title %></h1>
+<% if @article.author %>
+  <h2> Author: <%= @article.author.username %> </h2>
+<% end %>
 <p>
   Tags:
   <% @article.tags.each do |tag| %>
@@ -12,7 +15,7 @@
 <h3> Comments (<%= @article.comments.length %>):</h3>
 <%= render partial: 'articles/comment', collection: @article.comments %>
 <%= render partial: 'comments/form' %>
-<% if logged_in? %>
+<% if logged_in? && current_user == @article.author %>
   <%= link_to '<< Back to articles list', articles_path %>&nbsp;|
   <%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>&nbsp;|
   <%= link_to 'Edit', edit_article_path(@article) %>
