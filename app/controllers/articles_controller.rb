@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   include ArticlesHelper
 
-  before_filter :require_login, except: [:index, :show]
+  before_filter :require_login, except: [:index, :show, :by_month]
 
   def index
     @articles = Article.all
@@ -43,6 +43,15 @@ class ArticlesController < ApplicationController
     if @article.update(article_params)
       flash.notice = "Article #{@article.title} updated!"
       redirect_to articles_path(@article)
+    end
+  end
+
+  def by_month
+    @articles = Article.order created_at: :desc
+    @articles_by_month = {}
+    @articles.each do |article|
+      @articles_by_month[article.created_at.month] ||= []
+      @articles_by_month[article.created_at.month] << article
     end
   end
 

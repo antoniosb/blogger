@@ -1,0 +1,20 @@
+<h1> All Articles </h1>
+<ul id='articles'>
+  <% @articles_by_month.each do |month, articles| %>
+    <li>
+      <ul>
+        <li><%= Date::MONTHNAMES[month] %>
+        <% articles.each do |article| %>
+          <li>
+            <%= link_to article.title , article_path(article), class:'article_title' %>
+            <%= "by #{article.author.username}" if article.author %>
+          </li>
+        <% end %>
+      </ul> 
+    </li>
+  <% end %>
+</ul>
+<br/><h5><%= link_to 'Grab it by tags', tags_path %></h5>
+<% if logged_in? %>
+  <%= link_to 'Create a New Article', new_article_path, class: 'new_article' %>
+<% end %>
