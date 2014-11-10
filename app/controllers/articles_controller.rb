@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   include ArticlesHelper
 
-  before_filter :require_login, except: [:index, :show, :by_month]
+  before_filter :require_login, except: [:index, :show, :by_month, :popular]
 
   def index
     @articles = Article.all
@@ -54,6 +54,10 @@ class ArticlesController < ApplicationController
       @articles_by_month[article.created_at.month] ||= []
       @articles_by_month[article.created_at.month] << article
     end
+  end
+
+  def popular
+    @articles = Article.order(view_count: :desc).limit(3)
   end
 
 end

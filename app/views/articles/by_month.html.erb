@@ -1,4 +1,4 @@
-<h1> All Articles </h1>
+<h1> Articles by Month </h1>
 <ul id='articles'>
   <% @articles_by_month.each do |month, articles| %>
     <li>
@@ -15,7 +15,6 @@
     </li>
   <% end %>
 </ul>
-<br/><h5><%= link_to 'Grab it by tags', tags_path %></h5>
 <% if logged_in? %>
   <%= link_to 'Create a New Article', new_article_path, class: 'new_article' %>
 <% end %>

@@ -1,0 +1,13 @@
+<h1> Popular Articles </h1>
+<ul id='articles'>
+  <% @articles.each do |article| %>
+    <li> 
+      <%= link_to article.title , article_path(article), class:'article_title' %>
+      <%= "by #{article.author.username}" if article.author %>
+      <%= "viewed #{article.view_count} times." %>
+    </li>
+  <% end %>
+</ul>
+<% if logged_in? %>
+  <%= link_to 'Create a New Article', new_article_path, class: 'new_article' %>
+<% end %>
