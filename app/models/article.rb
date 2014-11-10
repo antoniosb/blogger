@@ -16,5 +16,12 @@ class Article < ActiveRecord::Base
     self.tags = new_or_found_tags
   end
 
+  def count_view()
+    views = self.view_count
+    views +=1
+    self.view_count = views
+    save
+  end
+
 end
 

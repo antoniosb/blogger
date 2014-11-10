@@ -1,6 +1,7 @@
 <h1><%= @article.title %></h1>
 <% if @article.author %>
-  <h2> Author: <%= @article.author.username %> </h2>
+  <h2> Author: <%= @article.author.username %> | <%= "viewed #{@article.view_count} times." %></h2>
+
 <% end %>
 <p>
   Tags:
