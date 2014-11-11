@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Jump Start Tutorials Blog</title>
+    <description>A custom implementation of a rails tutorial. Part of The Odin Project</description>
+    <link>http://localhost:3000/rss</link>
+    <item>
+      <title>Sample Article Text</title>
+      <body>This is the text for my article, woo hoo!</body>
+      <pubDate>Thu, 11 Sep 2014 00:17:41 +0000</pubDate>
+      <link>http://localhost:3000/articles/1</link>
+      <guid>http://localhost:3000/articles/1</guid>
+      <author>
+        <username=>admin</username=>
+        <email=>admin@example.com</email=>
+      </author>
+      <comments>
+        <comment>
+          <author_name=>Daffy Duck</author_name=>
+          <body=>I think this article is thhh-thhh-thhupid!</body=>
+          <created_at=>2014-11-10 16:21:00 UTC</created_at=>
+        </comment>
+        <comment>
+          <author_name=>Chewy</author_name=>
+          <body=>RAWWAAAR</body=>
+          <created_at=>2014-11-10 16:21:31 UTC</created_at=>
+        </comment>
+        <comment>
+          <author_name=></author_name=>
+          <body=></body=>
+          <created_at=>2014-11-10 16:47:34 UTC</created_at=>
+        </comment>
+        <comment>
+          <author_name=>Eddie</author_name=>
+          <body=>Vedder, lol.</body=>
+          <created_at=>2014-11-10 16:48:12 UTC</created_at=>
+        </comment>
+        <comment>
+          <author_name=>Joao</author_name=>
+          <body=>I own. havaianas.</body=>
+          <created_at=>2014-11-10 16:52:18 UTC</created_at=>
+        </comment>
+      </comments>
+      <view_count=>5</view_count=>
+    </item>
+    <item>
+      <title>How good can coffee taste?</title>
+      <body>I know that almost any coffee could taste better than this I'm drinking right now.</body>
+      <pubDate>Mon, 10 Nov 2014 14:27:12 +0000</pubDate>
+      <link>http://localhost:3000/articles/2</link>
+      <guid>http://localhost:3000/articles/2</guid>
+      <author>
+      </author>
+      <comments>
+      </comments>
+      <view_count=>0</view_count=>
+    </item>
+    <item>
+      <title>About Quotes</title>
+      <body>If you wanna use quotes on your strings like: I'm Okay, you must define the string with double quotes</body>
+      <pubDate>Mon, 10 Nov 2014 14:28:46 +0000</pubDate>
+      <link>http://localhost:3000/articles/3</link>
+      <guid>http://localhost:3000/articles/3</guid>
+      <author>
+      </author>
+      <comments>
+      </comments>
+      <view_count=>0</view_count=>
+    </item>
+    <item>
+      <title>About Quotes II</title>
+      <body>If you wanna use double quotes inside your strings like: Then she said "I'm Okay", you must escape it with backslash, or use simple quotes</body>
+      <pubDate>Mon, 10 Nov 2014 14:29:55 +0000</pubDate>
+      <link>http://localhost:3000/articles/4</link>
+      <guid>http://localhost:3000/articles/4</guid>
+      <author>
+      </author>
+      <comments>
+      </comments>
+      <view_count=>0</view_count=>
+    </item>
+    <item>
+      <title>Fine</title>
+      <body>Thank you. I'm glad you came.</body>
+      <pubDate>Mon, 10 Nov 2014 15:34:01 +0000</pubDate>
+      <link>http://localhost:3000/articles/7</link>
+      <guid>http://localhost:3000/articles/7</guid>
+      <author>
+      </author>
+      <comments>
+      </comments>
+      <view_count=>0</view_count=>
+    </item>
+    <item>
+      <title>C'mon</title>
+      <body>C'mon c'mon c'mooooooooooooooon;</body>
+      <pubDate>Mon, 10 Nov 2014 17:40:06 +0000</pubDate>
+      <link>http://localhost:3000/articles/15</link>
+      <guid>http://localhost:3000/articles/15</guid>
+      <author>
+      </author>
+      <comments>
+      </comments>
+      <view_count=>0</view_count=>
+    </item>
+    <item>
+      <title>This article has tags!</title>
+      <body>This article is so awesome that I have to tag it like it deserves!</body>
+      <pubDate>Mon, 10 Nov 2014 17:51:47 +0000</pubDate>
+      <link>http://localhost:3000/articles/16</link>
+      <guid>http://localhost:3000/articles/16</guid>
+      <author>
+      </author>
+      <comments>
+        <comment>
+          <author_name=>cool</author_name=>
+          <body=>great</body=>
+          <created_at=>2014-11-10 17:56:47 UTC</created_at=>
+        </comment>
+        <comment>
+          <author_name=></author_name=>
+          <body=></body=>
+          <created_at=>2014-11-10 17:56:54 UTC</created_at=>
+        </comment>
+      </comments>
+      <view_count=>0</view_count=>
+    </item>
+    <item>
+      <title>I have an author</title>
+      <body>That's awesome!</body>
+      <pubDate>Mon, 10 Nov 2014 22:35:23 +0000</pubDate>
+      <link>http://localhost:3000/articles/17</link>
+      <guid>http://localhost:3000/articles/17</guid>
+      <author>
+        <username=>admin</username=>
+        <email=>admin@example.com</email=>
+      </author>
+      <comments>
+      </comments>
+      <view_count=>1</view_count=>
+    </item>
+    <item>
+      <title>Greetings</title>
+      <body>My name is Ze das chinelas, I can do anything!</body>
+      <pubDate>Mon, 10 Nov 2014 22:42:15 +0000</pubDate>
+      <link>http://localhost:3000/articles/18</link>
+      <guid>http://localhost:3000/articles/18</guid>
+      <author>
+        <username=>ze das chinelas</username=>
+        <email=>ze@org.com</email=>
+      </author>
+      <comments>
+      </comments>
+      <view_count=>1</view_count=>
+    </item>
+  </channel>
+</rss>

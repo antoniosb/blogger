@@ -10,4 +10,5 @@ Blogger::Application.routes.draw do
   get 'logout' => 'author_sessions#destroy'
   get 'articles_by_month' => 'articles#by_month'
   get 'popular_articles' => 'articles#popular'
+  get 'rss' => 'articles#feed'
 end

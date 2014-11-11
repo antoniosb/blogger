@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   include ArticlesHelper
 
-  before_filter :require_login, except: [:index, :show, :by_month, :popular]
+  before_filter :require_login, except: [:index, :show, :by_month, :popular, :feed]
 
   def index
     @articles = Article.all
@@ -58,6 +58,13 @@ class ArticlesController < ApplicationController
 
   def popular
     @articles = Article.order(view_count: :desc).limit(3)
+  end
+
+  def feed
+    @articles = Article.all
+    respond_to do |format|
+      format.rss { render "feed.rss.builder" }
+    end
   end
 
 end
