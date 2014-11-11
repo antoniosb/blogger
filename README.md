@@ -11,4 +11,6 @@ I did the steps below to get the project started with RSpec:
 	3. `$ bundle install`
 	4. `$ rails generate rspec:install`
 
-
+------------------------------------------------------------------------
+ 
+ I've done from I0 trough I6 of [this tutorial](http://tutorials.jumpstartlab.com/projects/blogger.html), including the 'extra credit' section on I5. 
