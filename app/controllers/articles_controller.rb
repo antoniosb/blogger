@@ -64,6 +64,7 @@ class ArticlesController < ApplicationController
     @articles = Article.all
     respond_to do |format|
       format.rss { render "feed.rss.builder" }
+      format.html
     end
   end
 
